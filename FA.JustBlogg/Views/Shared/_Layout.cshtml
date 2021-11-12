@@ -1,0 +1,35 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - My ASP.NET Application</title>
+    @Scripts.Render("~/bundles/modernizr")
+    <link href="~/wwwroot/libs/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/wwwroot/css/post-style.css" rel="stylesheet" />
+</head>
+<body>
+
+    <div class="nav-container">
+        @Html.Partial("PostLayout/_PostHeader")
+    </div>
+    <div class="body-container">
+        @RenderBody()
+    </div>
+    <div class="footer-container">
+        @Html.Partial("PostLayout/_PostFooter")
+    </div>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    <script src="~/Scripts/jquery.validate.js"></script>
+    <script src="~/Scripts/jquery.validate.unobtrusive.js"></script>
+
+    <script src="~/wwwroot/libs/jquery/jquery.min.js"></script>
+    <script src="~/wwwroot/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="~/wwwroot/scripts/post-common.js"></script>
+    <script src="https://kit.fontawesome.com/6446a86095.js" crossorigin="anonymous"></script>
+
+    @RenderSection("scripts", required: false)
+</body>
+</html>

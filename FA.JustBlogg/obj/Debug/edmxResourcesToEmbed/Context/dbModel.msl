@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="FA_JustBloggModelStoreContainer" CdmEntityContainer="FA_JustBloggEntities">
+    <EntitySetMapping Name="tbl_PostList">
+      <EntityTypeMapping TypeName="FA_JustBloggModel.tbl_PostList">
+        <MappingFragment StoreEntitySet="tbl_PostList">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="ShortDescription" ColumnName="ShortDescription" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="PostedOn" ColumnName="PostedOn" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
